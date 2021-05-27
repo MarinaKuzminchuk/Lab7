@@ -31,12 +31,12 @@ public class UserInterfaceHex extends UserInterface {
 	@Override
 	public void actionPerformed(ActionEvent event) {
 		String command = event.getActionCommand();
-		if (command.equals("a") 
+		if (command.equals("a")
 				|| command.equals("b") 
 				|| command.equals("c") 
 				|| command.equals("d")
 				|| command.equals("e") 
-				|| command.equals("f")){
+				|| command.equals("f")) {
 			int number = Integer.parseInt(command, 16);
 			calc.numberPressed(number);
 			redisplay();
@@ -44,11 +44,11 @@ public class UserInterfaceHex extends UserInterface {
 			super.actionPerformed(event);
 		}
 	}
-    // Convert display value integer to hex string and set it to display
+
+	// Convert display value integer to hex string and set it to display
 	@Override
-	protected void redisplay() {	
+	protected void redisplay() {
 		display.setText(Integer.toHexString(calc.getDisplayValue()).toUpperCase());
 	}
-	
 
 }
