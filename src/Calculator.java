@@ -7,8 +7,8 @@
  */
 public class Calculator
 {
-    private CalcEngine engine;
-    private UserInterface gui;
+    private CalcEngineHex engine;
+    private UserInterfaceHex gui;
 
     /**
      * Create a new calculator and show it.
